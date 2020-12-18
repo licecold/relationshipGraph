@@ -1,0 +1,66 @@
+.force-graph {
+  border-radius: 5px;
+  &.svg {
+    cursor: move;
+  }
+  .node.node-highlighted .ring {
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+    filter: alpha(opacity=50);
+    opacity: .5;
+    stroke: #888;
+    stroke-width: 12px;
+  }
+  .node .node_outline {
+    cursor: pointer;
+    fill: #a5abb6;
+    pointer-events: all;
+    stroke: #9aa1ac;
+    stroke-width: 2px;
+  }
+  .node .ring {
+    fill: none;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    filter: alpha(opacity=0);
+    opacity: 0;
+    stroke: #6ac6ff;
+    stroke-width: 8px;
+  }
+
+  .node.selected .ring,
+  .node:hover .ring {
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)';
+    filter: alpha(opacity=30);
+    opacity: .3;
+  }
+
+  .relationship {
+    cursor: default;
+  }
+  .relationship line {
+    stroke: #aaa;
+  }
+  .relationship .outline {
+    cursor: default;
+  }
+  .relationship .overlay {
+    cursor: default;
+    fill: #6ac6ff;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  .relationship text {
+    cursor: default;
+  }
+
+  .relationship.selected .overlay,
+  .relationship:hover .overlay {
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)';
+    filter: alpha(opacity=30);
+    opacity: .3;
+  }
+
+  .text.icon {
+    font-family: icomoon;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "relationshipgraph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "d3": "^5.7.0",
+    "d3-context-menu": "^1.1.2",
+    "mockjs": "^1.1.0"
+  },
+  "devDependencies": {},
+  "author": "liangbing",
+  "license": "ISC"
+}
